@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "517380774404",
+    "project_id": "sorteioprc",
+    "storage_bucket": "sorteioprc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517380774404:android:10c6ba515beb431612b351",
+        "android_client_info": {
+          "package_name": "com.maxpayneman.sorteioparanaclinicas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlmFnDZBOw0xFFj0eDC4R6SfOKUAenHAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

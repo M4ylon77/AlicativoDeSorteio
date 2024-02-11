@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    app:layout_anchorGravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpart"
+    tools:context=".View.Fragment.AdcionarFucionario">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTintMode="add"
+        android:backgroundTint="#2E0000"
+        android:background="@drawable/baseline_close_24"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        >
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Adicionar Funcionario"
+        android:layout_marginBottom="10dp"
+        ></TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        >
+
+    <EditText
+        android:id="@+id/nomeColaborador"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome:"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="#DA6666"
+        android:textColorHint="@color/white"
+        android:textColor="#11FF02"
+        android:layout_margin="10dp"
+        ></EditText>
+
+        <EditText
+        android:id="@+id/cracha"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Cracha:"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="#DA6666"
+        android:textColorHint="@color/white"
+        android:textColor="#11FF02"
+        ></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        >
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="30dp"
+            android:backgroundTintMode="add"
+            android:backgroundTint="@color/black"
+
+
+            >
+        </Spinner>
+
+
+
+<!--        -->
+<!--    <EditText-->
+<!--        android:id="@+id/turno"-->
+<!--        android:background="#DA6666"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:hint="Turno:"-->
+<!--        android:textSize="30dp"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="#11FF02"-->
+<!--        ></EditText>-->
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/addFun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:textSize="25dp"
+        android:backgroundTint="#470707"
+        android:layout_marginBottom="20dp"
+        ></Button>
+
+
+</LinearLayout>
+
+
+</FrameLayout>

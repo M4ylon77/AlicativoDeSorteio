@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".View.Fragment.SelecionarFuncionario">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#2E0000"
+            android:background="@drawable/baseline_close_24"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/recado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Selecionar Premio"
+            android:layout_marginBottom="10dp"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            >
+            <Spinner
+                android:id="@+id/spinnerSelect"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="30dp"
+                android:backgroundTintMode="add"
+                android:backgroundTint="@color/black"
+                >
+            </Spinner>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/addFun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"
+            android:textSize="25dp"
+            android:backgroundTint="#470707"
+            ></Button>
+
+
+    </LinearLayout>
+
+</FrameLayout>

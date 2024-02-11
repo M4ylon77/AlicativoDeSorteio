@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    app:layout_anchorGravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpart"
+    tools:context=".View.Fragment.AdcionarFucionario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTintMode="add"
+            android:backgroundTint="#2E0000"
+            android:background="@drawable/baseline_close_24"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            >
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Adicionar Premio"
+            android:layout_marginBottom="10dp"
+            ></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            >
+
+            <EditText
+                android:id="@+id/nomePremio"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:hint="Nome:"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:background="#DA6666"
+                android:textColorHint="@color/white"
+                android:textColor="#11FF02"
+                android:layout_margin="10dp"
+                ></EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/AddPremio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar"
+            android:textSize="25dp"
+            android:backgroundTint="#470707"
+            ></Button>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

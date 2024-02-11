@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragment.ListaDeVencedores">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="600dp">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Insira a data do sorteio!"
+           android:textColor="@color/white"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textSize="20dp"
+           >
+
+       </TextView>
+       <EditText
+           android:id="@+id/editTextDate"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:background="@drawable/backgroundpart"
+           android:gravity="center"
+           android:textColorHint="#BFFFFFFF"
+           android:hint="dd/mm/yyyy"
+           android:textColor="@color/white"
+           android:textSize="25dp"
+           android:accessibilityDataSensitive="auto"
+           android:layout_gravity="center"
+       />
+
+       <ImageButton
+           android:id="@+id/calendarButton"
+           android:layout_width="wrap_content"
+           android:background="@drawable/backgroundpart"
+           android:layout_gravity="center"
+           android:padding="5dp"
+           android:layout_margin="5dp"
+           android:layout_height="wrap_content"
+           android:src="@drawable/baseline_calendar_month_24"
+           android:onClick="showDatePickerDialog"
+       />
+
+   <ListView
+       android:id="@+id/listar_vencedor_lista"
+       android:layout_width="match_parent"
+       android:layout_height="400dp">
+
+   </ListView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_gravity="center"
+
+    >
+      <Button
+          android:id="@+id/voltar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:backgroundTint="@color/black"
+          android:text="Voltar"
+          >
+      </Button>
+
+    <Button
+        android:id="@+id/salvarResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar resultados"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+
+        ></Button>
+
+</LinearLayout>
+
+   </LinearLayout>
+</FrameLayout>
