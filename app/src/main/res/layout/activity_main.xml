@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".View.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+
+        >
+
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:background="@drawable/pnc"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="120dp"
+        android:text="Carregando"
+        android:textColor="#1AFF00"
+        android:textSize="30dp"
+       />
+
+
+
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/reticiencias"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textColor="#1AFF00"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:textSize="30dp"
+        >
+
+    </TextView>
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/premio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2EFF00"
+        android:textSize="30dp"
+        android:text="Carregando"
+
+        >
+
+    </TextView>
+
+
+
+</LinearLayout>
+    <Button
+        android:id="@+id/sortear"
+        android:layout_gravity="center"
+        android:backgroundTint="#590707"
+        android:layout_width="250dp"
+        android:text="Sortear"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="60dp">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+       <HorizontalScrollView
+           android:layout_gravity="center"
+           android:layout_marginStart="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                >
+
+                <!-- Botões dentro do ScrollView com orientação horizontal -->
+                <Button
+                    android:id="@+id/addRemove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Adicionar funcionario"
+                    android:textSize="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#E86E6E" />
+
+                <Button
+                    android:id="@+id/AddPremio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Adicionar Premio"
+                    android:textSize="20dp"
+                    android:backgroundTint="#E86E6E"
+                    android:layout_marginEnd="10dp"
+                    />
+
+
+                <Button
+                    android:id="@+id/listar_vencedor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Vencedores"
+                    android:textSize="20dp"
+                    android:backgroundTint="#E86E6E"
+                    android:layout_marginEnd="10dp"
+                    />
+
+            </LinearLayout>
+
+       </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backselect"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginEnd="135dp"
+
+
+        >
+
+
+    <ImageView
+        android:id="@+id/Select"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/baseline_add_24"
+        android:backgroundTint="#710000"
+
+    />
+
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/backgroundpart"
+            >
+
+            <ImageView
+                android:id="@+id/selecionarPremio"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/gift_24"
+                ></ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+<LinearLayout
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Participantes!"
+    android:textSize="20dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:background="@drawable/backgroundpart"
+    android:gravity="center"
+    android:textColor="#2EFF00"
+    >
+
+</TextView>
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right"
+        android:gravity="right"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Premios!"
+            android:textSize="20dp"
+            android:background="@drawable/backgroundpart"
+            android:gravity="center"
+            android:textColor="#2EFF00"
+            >
+
+        </TextView>
+
+        <ListView
+                android:id="@+id/lista_premio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
